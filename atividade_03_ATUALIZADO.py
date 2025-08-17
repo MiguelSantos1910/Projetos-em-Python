@@ -66,7 +66,6 @@ while True:
         clear()
 
         if len(fila) >= 2:
-            # Ordena sem lambda e sem função definida
             fila_ordenada = sorted(fila, key=itemgetter("prioridade", "chegada"))
             print("Fila de atendimento (por prioridade):")
             for pessoa in fila_ordenada:
@@ -76,3 +75,4 @@ while True:
     except ValueError:
         print("Você digitou algum caractere inválido!")
         print("Tente novamente!")
+
